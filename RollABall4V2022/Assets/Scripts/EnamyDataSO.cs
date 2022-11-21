@@ -1,10 +1,33 @@
 ﻿using UnityEngine;
 
-namespace UnityTemplateProjects
+
+
+[CreateAssetMenu(fileName = "EnemyData", menuName = "Assets/Enemy", order = 0)]
+public class EnamyDataSO : ScriptableObject
 {
-    [CreateAssetMenu(fileName = "FILENAME", menuName = "MENUNAME", order = 0)]
-    public class EnamyDataSO : ScriptableObject
-    {
-        
-    }
+    
+    public float moveSpeed;
+
+    public int maxHealthPoints;
+
+    public GameObject enemyMesh;
+    
+    
+    
+    public float followDistance; //x
+    
+    public float returnDistance; //z
+    
+    public float attackDistance; //y
+    
+    public float geviUpDistance; //w
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
